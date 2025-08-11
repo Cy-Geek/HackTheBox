@@ -25,6 +25,7 @@ Click on the three lines up left, then click on Security snapshot
 <img width="298" height="294" alt="Pasted image 20250217075005" src="https://github.com/user-attachments/assets/3414c913-20b1-409b-882d-1765b0196812" />
 
 Take a look at the URL
+
 <img width="414" height="42" alt="Screenshot 2025-02-17 075031" src="https://github.com/user-attachments/assets/f22a826b-7baf-445a-a039-e7ae3243754a" />
 
 A : The word is **data**
