@@ -21,6 +21,7 @@ Browse the app on port 80, you'll find a dashboard like that, and logged in as N
 <img width="821" height="520" alt="Pasted image 20250217074848" src="https://github.com/user-attachments/assets/cb7fa4b4-dcfa-4af4-b906-5f5f305ea681" />
 
 Click on the three lines up left, then click on Security snapshot
+
 <img width="298" height="294" alt="Pasted image 20250217075005" src="https://github.com/user-attachments/assets/3414c913-20b1-409b-882d-1765b0196812" />
 
 Take a look at the URL
