@@ -45,7 +45,7 @@ If you try to cat out the file you’ll find it encrypted, so open **Wireshark*
 It’s gonna show you this window :
 <img width="881" height="687" alt="Screenshot 2025-02-18 170005" src="https://github.com/user-attachments/assets/9355c317-64ce-4176-afbe-dda7c9c5daf0" />
 
-Click on the **File tab up left or click ‘ctrl+o’ as a shortcut**
+Click on the **File tab up left or click ‘ctrl+o’ as a shortcut**  
 <img width="354" height="432" alt="Screenshot 2025-02-18 170017" src="https://github.com/user-attachments/assets/48141cb9-08a5-438a-966c-f94ca8a09765" />
 
 Then go to where the PCAP file was downloaded and open it
@@ -142,6 +142,7 @@ We'll separate this command to couple of parts.
 4. `os.setuid(0)` : That function **setuid()** sets our user id to 0
 5. `os.system("/bin/bash")` : This function establish a bash shell which is gonna be root shell 
 <img width="772" height="115" alt="Screenshot 2025-02-17 113638" src="https://github.com/user-attachments/assets/876cd042-cc95-4936-aa3c-3c6a6ca6a60b" />
+
 
 Same thing in the python IDLE, the `-c` flag saves us all that  
 <img width="640" height="168" alt="Pasted image 20250217115240" src="https://github.com/user-attachments/assets/6e26ff30-e178-4d8c-8486-8ea131021096" />
