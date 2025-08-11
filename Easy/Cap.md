@@ -80,13 +80,13 @@ A : `SSH`
 
 Task : Submit the flag located in the Nathan user's home directory 
 
-List files, we found user.txt file which contains the flag
+List files, we found user.txt file which contains the flag  
 <img width="299" height="104" alt="Screenshot 2025-02-17 084541" src="https://github.com/user-attachments/assets/c2cb2768-da7b-4a9d-911b-746e66915541" />
 
-We can also login with FTP using same credentials, we'll find the flag there too, download it
+We can also login with FTP using same credentials, we'll find the flag there too, download it  
 <img width="803" height="461" alt="Screenshot 2025-02-17 084232" src="https://github.com/user-attachments/assets/aed05c90-2d25-4d11-a828-b08062fc6093" />
 
-Then cat it out and here's the flag
+Then cat it out and here's the flag  
 <img width="345" height="72" alt="Screenshot 2025-02-17 084301" src="https://github.com/user-attachments/assets/c07deb5c-c033-4f68-ae98-65a9122c7eff" />
 
 User Flag : **1aeba54bd276f41be26d0802ba8de021**
@@ -99,27 +99,27 @@ Q : What is the full path to the binary on this machine has special capabilities
 
 We're gonna use LinPEAS for that, so we need to transfer the file from our shell to Nathan's shell
 
-Establish an HTTP python server on port 80 in your machine
+Establish an HTTP python server on port 80 in your machine  
 <img width="520" height="84" alt="Pasted image 20250217091523" src="https://github.com/user-attachments/assets/12253972-d71e-4f03-9602-1c39ce56f20a" />
 
-In Nathan shell, grab **linpeas.sh** file from our machine use `wget` command, and make it executable
+In Nathan shell, grab **linpeas.sh** file from our machine use `wget` command, and make it executable  
  <img width="771" height="438" alt="Pasted image 20250217091658" src="https://github.com/user-attachments/assets/a5615f8c-864a-4784-a367-2e5e8d337752" />
 
-Then go ahead and run it
+Then go ahead and run it  
 <img width="794" height="706" alt="Pasted image 20250217091809" src="https://github.com/user-attachments/assets/40dc76ed-aa45-4647-9ca6-a52c136d94b4" />
 
 Look for anything interesting in the output, and don't forget this is the color rank for the findings
 <img width="729" height="142" alt="Pasted image 20250217092032" src="https://github.com/user-attachments/assets/4d2f9eb3-a87f-483b-ac8e-9fb22200bb6d" />
 
-We found this **red/yellow** file!
+We found this **red/yellow** file!  
 <img width="997" height="128" alt="Screenshot 2025-02-17 091336" src="https://github.com/user-attachments/assets/fd8c6415-6518-412d-bcfe-bc441b9121b1" />
 
-Get the capabilities of that file to ensure it has special ones 
+Get the capabilities of that file to ensure it has special ones  
 <img width="434" height="36" alt="Screenshot 2025-02-17 110747" src="https://github.com/user-attachments/assets/d29b6df0-7b49-4e09-92a8-75c312fcdf3d" />
 
 A : The full path is  **/usr/bin/python3.8**
 
-The real question is 'What do **cap_setuid,cap_net_bind_service+eip** mean'?
+The real question is 'What do **cap_setuid,cap_net_bind_service+eip** mean'?  
 <img width="664" height="221" alt="Screenshot 2025-02-17 094925" src="https://github.com/user-attachments/assets/35113842-5024-4030-b999-20ef4a32966c" />
 
 For more info do this command `man capabilities` OR Visit **[man7](https://man7.org/linux/man-pages/man7/capabilities.7.html)**
@@ -143,10 +143,10 @@ We'll separate this command to couple of parts.
 5. `os.system("/bin/bash")` : This function establish a bash shell which is gonna be root shell 
 <img width="772" height="115" alt="Screenshot 2025-02-17 113638" src="https://github.com/user-attachments/assets/876cd042-cc95-4936-aa3c-3c6a6ca6a60b" />
 
-Same thing in the python IDLE, the `-c` flag saves us all that 
+Same thing in the python IDLE, the `-c` flag saves us all that  
 <img width="640" height="168" alt="Pasted image 20250217115240" src="https://github.com/user-attachments/assets/6e26ff30-e178-4d8c-8486-8ea131021096" />
 
-Then cat out the root flag
+Then cat out the root flag  
 <img width="309" height="38" alt="Pasted image 20250217115524" src="https://github.com/user-attachments/assets/9adb5ea7-322f-474f-b85e-10cf4727e73a" />
 
 Root Flag : **9e02256fad08d2eda01fe02952e929cb**
