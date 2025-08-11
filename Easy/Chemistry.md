@@ -1,3 +1,5 @@
+<img width="1274" height="146" alt="image" src="https://github.com/user-attachments/assets/8c5c859c-d581-4400-80fd-b2655799b85d" />
+
 ### Stuff to learn in this box 
 	1. CIF files_ 
 	2. Enumeration with `netstat` (`ss`) 
